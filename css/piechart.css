@@ -1,0 +1,67 @@
+/* 
+   CSS for profile tabs 
+*/
+.piechart-container a:visited,
+.piechart-container a:hover,
+.piechart-container a:active {
+  outline: none;
+  text-decoration: none; }
+.piechart-container .piechart-catagory-wrapper {
+  min-width: 280px; }
+.piechart-container .piechart-catagory-wrapper .piechart-category-title-row .piechart-category-title-col .piechart-category-akkordeon-headline {
+  border: 1px solid #233554;
+  margin-bottom: 20px;
+  transition: all 0.5s ease-in-out;
+  position: relative;
+  display: block;
+  cursor: pointer;
+  background-color: #112240;
+  color: #64ffda;
+  line-height: 40px;
+  width: 100%;
+  padding-left: 45px; }
+.piechart-container .piechart-catagory-wrapper .piechart-category-title-row .piechart-category-title-col .piechart-category-akkordeon-headline::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #e6f1ff;
+  font-size: 24px;
+  content: '+';
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 5px;
+  display: block; }
+.piechart-container .piechart-catagory-wrapper .piechart-category-title-row .piechart-category-title-col:hover .piechart-category-akkordeon-headline {
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(138, 250, 218, 0.668),
+    transparent
+  );
+  transition: all 650ms;
+  box-shadow: 1px 1px 25px 10px  rgba(138, 250, 218, 0.668); }
+.piechart-container .piechart-catagory-wrapper .piechart-category-title-row .piechart-category-title-col:hover .piechart-category-akkordeon-headline, .piechart-container .piechart-catagory-wrapper .piechart-category-title-row .piechart-category-title-col:hover .piechart-category-akkordeon-headline::before {
+  color: #e6f1ff;
+  text-decoration: none; }
+.piechart-container .piechart-catagory-wrapper .piechart-category-title-row.toggle-open .piechart-category-title-col .piechart-category-akkordeon-headline {
+  background-color: #303C55;
+  border-color: #64ffda;
+  color: #e6f1ff; }
+.piechart-container .piechart-catagory-wrapper .piechart-category-title-row.toggle-open .piechart-category-title-col .piechart-category-akkordeon-headline::before {
+  content: '-';
+  color: #e6f1ff; }
+.piechart-container .piechart-catagory-wrapper .piechart-category-content-row {
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out; }
+.piechart-container .piechart-catagory-wrapper .piechart-category-content-row.toggle-open {
+  max-height: 3000px;
+  transition: max-height 0.5s ease-in; }
+
+@media (max-width: 845px) {
+  .piechart-element-wrapper {
+    width: 300px !important; } }
+
+/*# sourceMappingURL=piechart.css.map */

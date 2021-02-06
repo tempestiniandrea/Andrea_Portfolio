@@ -1,0 +1,2977 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Andrea</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="assets/a-logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/themes/prism.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/prism.min.js"></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link href="https://fonts.googleapis.com/css?family=Kanit:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/piechart.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/piechart.css" />
+  <link rel="stylesheet" type="text/css" href="scss/piechart.scss" />
+  <link rel="stylesheet" type="text/css" href="css/layout.css" />
+  <style>
+
+    @font-face { font-family: "Exan-Regular"; font-weight: bold; src: url('fonts/Exan-Regular.ttf');}
+    body,
+    h1 {
+      font-family: "Exan-Regular";
+    }
+    h2 {
+    }
+    h3 {
+    }
+    h4 {
+    }
+    h5 {
+    }
+    h6 {
+    }
+
+
+    /* Remove margins from "page content" on small screens */
+    @media only screen and (max-width: 600px) {
+      #main {
+        margin-left: 0
+      }
+    }
+
+    html,
+    body {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      position: relative;
+      font-size: 12px;
+      font-family: "Exan-Regular", "sans-serif";
+      background: #0a192f url('assets/home-loader-white-3.gif') no-repeat 50% 50%;
+      background-size: 150px;
+    }
+    body {
+        -webkit-transition: background-color 1s;
+        transition: background-color 1s;
+         -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            overflow-x: hidden;
+    }
+    html, body { min-height: 100%; }
+    body.loading {
+        background: #0a192f url('assets/home-loader-white-3.gif') no-repeat 50% 50%;
+        -webkit-transition: background-color 0;
+        transition: background-color 0;
+        opacity: 0;
+        -webkit-transition: opacity 0;
+        transition: opacity 0;
+    }
+
+
+  </style>
+</head>
+
+<body class="loading">
+  <div id="home">
+    <div id="videowrapper">
+      <div id="fullScreenDiv">
+        <video id="video" role="presentation" preload="auto" playsinline="" crossorigin="anonymous" loop="" muted=""
+          autoplay="" class="blur">
+          <source src="assets/blue_stream_curve_line_particles_pack.mov" type="video/mp4">
+        </video>
+        <div id="videoMessage" class="styling">
+          <h5>Hi, my name is</h5>
+          <h1>Andrea</h1>
+          <h2>I am a Solutions Engineer</h2>
+          <h6>I manage projects to leverage business growth</h6><br>
+          <div class="scroll-icon">
+            <a class="scrollTo" data-scrollTo="main" href="#"><img src="assets/scroll-icon.png" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- New navbar with overlay -->
+  <nav>
+    <div id="logo" class="logo">
+      <a href="portfolio_white_version_flippingcards.html"><img src="assets/a-logo.png" alt="" width='60px' height='55px'></a>
+    </div>
+    <div class="menu-icon">
+      <span></span>
+    </div>
+  </nav>
+  <!-- End of new navbar with overlay -->
+
+
+  <!-- Modal button -->
+  <div class="popup-icon">
+    <button id="modBtn" class="modal-btn"><img src="assets/contact-icon.png" alt=""></button>
+  </div>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <!-- Modal Content -->
+    <div class="modal-content">
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h3 class="header-title">Say hello to <em>Andrea</em></h3>
+        <div class="close-btn"><img src="assets/close_contact.png" alt=""></div>
+      </div>
+      <!-- Modal Body -->
+      <div class="modal-body">
+        <div class="col-md-6 col-md-offset-3">
+          <form id="contact" action="" method="post">
+            <div class="row">
+              <div class="col-md-12">
+                <fieldset>
+                  <input name="name" type="text" class="form-control" id="name" placeholder="Your name..." required="">
+                </fieldset>
+              </div>
+              <div class="col-md-12">
+                <fieldset>
+                  <input name="email" type="email" class="form-control" id="email" placeholder="Your email..."
+                    required="">
+                </fieldset>
+              </div>
+              <div class="col-md-12">
+                <fieldset>
+                  <input name="subject" type="text" class="form-control" id="subject" placeholder="Subject..."
+                    required="">
+                </fieldset>
+              </div>
+              <div class="col-md-12">
+                <fieldset>
+                  <textarea name="message" rows="6" class="form-control" id="body" placeholder="Your message..."
+                    required=""></textarea>
+                </fieldset>
+              </div>
+              <div class="col-md-12">
+                <fieldset>
+                  <button type="submit" id="form-submit" onclick="sendEmail()" value="Send An Email" class="btn">Send
+                    Message Now</button>
+                </fieldset>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script type="text/javascript">
+    function sendEmail() {
+      var name = $("#name");
+      var email = $("#email");
+      var subject = $("#subject");
+      var body = $("#body");
+
+      if (isNotEmpty(name) && isNotEmpty(email) && isNotEmpty(subject) && isNotEmpty(body)) {
+        $.ajax({
+          url: 'sendEmail.php',
+          method: 'POST',
+          dataType: 'json',
+          data: {
+            name: name.val(),
+            email: email.val(),
+            subject: subject.val(),
+            body: body.val()
+          }, success: function (response) {
+            if (response.status == "success")
+              alert('Email Has Been Sent!');
+            else {
+              alert('Please Try Again!');
+              console.log(response);
+            }
+          }
+        });
+      }
+    }
+
+    function isNotEmpty(caller) {
+      if (caller.val() == "") {
+        caller.css('border', '1px solid red');
+        return false;
+      } else
+        caller.css('border', '');
+
+      return true;
+    }
+  </script>
+  <!-- End of Modal -->
+
+  <!-- Section about overlay menu on navbar -->
+  <section class="overlay-menu">
+    <div class="container">
+      <div class="row">
+        <div class="main-menu">
+          <ul>
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#work">Work</a>
+            </li>
+            <li>
+              <a href="#skills">Skills</a>
+            </li>
+            <li>
+              <a href="#resume">Resume</a>
+            </li>
+            <!-- <li>
+              <a href="#contact">Contact</a>
+            </li> -->
+          </ul>
+          <p>Designing engineerined solutions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End of section about overlay menu on navbar -->
+
+  <!-- Page Content -->
+  <div class="w3-padding-large" id="main">
+    <!-- Header/Home -->
+
+    <!-- About Section -->
+    <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about"><br>
+      <h1 class="decorated"><span>About Me</span></h1>
+      <div class="vl1"></div>
+      <br><br><br><br><br><br><br>
+      <div class="profile">
+        <div class="picturecontainer">
+          <span onclick="this.parentElement.style.display='none'" class="pictureclosebtn">&times;</span>
+          <img id="expandedImg" style="width:100%">
+          <div id="imgtext"></div>
+        </div>
+        <!-- <a href="#" class="photo"> -->
+        <!-- <h1 class="nameEffect" style="color:#233554">Andrea</h1> -->
+        <img class="hideprofile" src="assets/profile2.jpg" style="width: 150px;
+  height: 180px;" alt="profile" onclick="myFunction(this);" />
+        <div class="glow-wrap">
+          <i class="glow"></i>
+        </div>
+        <!-- </a> -->
+        <div class="section-text-block">
+          <h4 style="color:#64ffda">Role</h4>
+          <p>I'm a solutions engineer based in London, UK,<br>specializing in building custom solutions for
+            web
+            applications,<br>providing technical guidance to maximise prospects and clients' performance.
+          </p>
+        </div>
+      </div>
+      <br><br><br><br><br><br><br><br><br><br>
+      <div class="vl1"></div>
+
+      <!-- <div class="profilecover"> -->
+      <h1 style="color:#e6f1ff">Profile</h1>
+      <p style="text-align:center; color:#8892b0">Expand this section for more details. 
+      </p><br>
+      <button class="collapsible"><span style="color:#64ffda">Discover</span></button>
+      <div class="contentcollapsible">
+        <h4 style="text-align:center; color:#64ffda">Profile</h4>
+        <p style="text-align:center; color:#8892b0">I graduated in Biomechanics<br>and worked in product
+          management<br>for
+          some
+          of the key players in the medical-scientific and IT industries.<br>My main fields are Software
+          Development,
+          Project
+          Management, Pre-Sales and Post-Sales.<br>I own highly technical skills through which I can interpret<br>logically
+          complex business concepts<br> to deliver clear information to the
+          audience.<br>I am a multilingual and highly motivated professional<br> who always worked in dynamic and international
+          environments<br>bringing knowledge and leadership within the same framework.<br>I am currently focusing on business
+          development<br>to help media companies in EMEA&APAC regions<br>creating and maintaining modern solutions.
+        </p>
+      </div>
+
+      <!-- </div> -->
+      <br><br>
+      <br>
+      <div class="vl1"></div>
+      <br>
+      <!-- Area Tabs -->
+      <h1 style="color:#e6f1ff">Areas</h1>
+      <p style="text-align:center; color:#8892b0">My competences cover a wide range of technologies and
+        areas.<br>Expand the below tabs to discover more.</p>
+      <div class="profileContainer">
+
+        <div id="piechart">
+
+        </div>
+      </div>
+      <div class="vl1"></div>
+      <!-- Profile Section -->
+      <h1 style="color:#e6f1ff">Stats</h1>
+      <p style="text-align:center; color:#8892b0">Explore the below chart which will guide you through a visual representation of my profile in relation to different industres.<br>Click on each section to expand or the main button to return to default position.</p>
+      <br>
+      <br>
+      <div id="chartdiv"></div>
+      <br>
+      <br>
+
+      <!-- The Modal -->
+      <div id="myModal15" class="modalcontainer">
+
+        <!-- Modal content -->
+        <div class="modalcontainer-content">
+          <div class="modalcontainer-header">
+            <span class="close1">&times;</span>
+            <h2>Profile</h2>
+          </div>
+          <div class="modalcontainer-body">
+            <p>
+              <strong>Academic Background:</strong><br>
+              MEng in Biomechanics, with strong focusing on Prototyping UI Design.
+            </p>
+            <p>
+              <strong>Work Experience:</strong><br>
+              BDM (3+ years) for Industrial Engineering firm <a style="color:#64ffda" target="_blank"
+                rel="noopener noreferrer" href="https://www.eni.com/">ENI</a>, acquiring management and
+              sales skills
+              during ongoing graduation.<br>
+              PM (1+ years) for Medical-Pharmaceutical corporation <a style="color:#64ffda" target="_blank"
+                rel="noopener noreferrer" href="https://www.novartis.com/">Novartis</a>,
+              with extensive client's
+              portfolio, responsible for UI design and product releases.<br>
+              TSE (1+ years) for Data Network giant <a style="color:#64ffda" target="_blank" rel="noopener noreferrer"
+                href="https://www.equinix.com/">Equinix</a> in charge of
+              crisis management, business continuity and
+              disaster recovery<br>
+              TSE (1+ years) for Video-Media leader <a style="color:#64ffda" target="_blank" rel="noopener noreferrer"
+                href="https://www.brightcove.com/">Brightcove</a>,
+              setting/troubleshooting pre/post implementation
+              front/backend environments<br>
+              SE (1+ years) for Video-Media leader <a style="color:#64ffda" target="_blank" rel="noopener noreferrer"
+                href="https://www.jwplayer.com/">JW Player</a>, designing
+              UI/leading-edge solutions for over 100
+              client's portfolios.
+            </p>
+          </div>
+          <div class="modalcontainer-footer">
+            <h3><a href="https://www.linkedin.com/in/andrea-tempestini-1b293342" target="_blank" rel="noopener noreferrer"><img
+                  src="assets/LI-In-Bug.png" width='60px' height='55px'></a></h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- The Modal -->
+      <div id="myModal16" class="modalcontainer">
+
+        <!-- Modal content -->
+        <div class="modalcontainer-content">
+          <div class="modalcontainer-header">
+            <span class="close1">&times;</span>
+            <h2>Manipulating data</h2>
+          </div>
+          <div class="modalcontainer-body">
+            <p>
+              <strong>Project Management:</strong><br>
+              <strong>15+</strong> Projects in the Industrial Engineering industry, planning and executing
+              territory
+              acquisition and business
+              expansion throughout the regional and national areas.<br>
+            </P>
+            <p>
+              <strong>5+</strong> Projects in the Medical-Pharmaceutical industry, applying business
+              learning solutions
+              and managing vendors in the
+              delivery of client solutions.<br>Development, implementation and maintenance of evaluation
+              strategies<br>
+              to measure
+              and report on the effectiveness of offered solutions.<br>
+            </p>
+            <p>
+              <strong>3+</strong> Projects in the Data Network industry, calculating and managing the
+              infrastructure and
+              technical specifications
+              required by the main leads.<br>
+            </p>
+            <p>
+              <strong>3+</strong> Projects in the Video-Media Marketing industry, aligning with pre and
+              post
+              implementation requirements to plan,
+              execute, close and monitor ongoing performances.
+            </p>
+          </div>
+          <div class="modalcontainer-footer">
+            <h3><a href="https://www.linkedin.com/in/andrea-tempestini-1b293342" target="_blank" rel="noopener noreferrer"><img
+                  src="assets/LI-In-Bug.png" width='60px' height='55px'></a></h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- The Modal -->
+      <div id="myModal17" class="modalcontainer">
+
+        <!-- Modal content -->
+        <div class="modalcontainer-content">
+          <div class="modalcontainer-header">
+            <span class="close1">&times;</span>
+            <h2>Manipulating data</h2>
+          </div>
+          <div class="modalcontainer-body">
+            <p>
+              <strong>Client Portfolios:</strong><br>
+              120+ Clients in the Industrial Engineering industry for 3+ years.<br>Main clients:<br><a
+                style="color:#64ffda" target="_blank" rel="noopener noreferrer" href="https://www.shell.com/">Royal
+                Dutch Shell</a><br><a style="color:#64ffda" target="_blank" rel="noopener noreferrer"
+                href="https://www.total.com/">Total SE</a>
+            </p>
+            <p>
+              30+ Clients in the Medical-Pharmaceutical industry for 1+ years<br>Development,
+              implementation and
+              maintenance of
+              evaluation strategies<br> to measure and report on the effectiveness of offered
+              solutions.<br>Main
+              clients:<br><a style="color:#64ffda" target="_blank" rel="noopener noreferrer"
+                href="https://www.hexal.de/">Hexal</a><br><a style="color:#64ffda" target="_blank"
+                rel="noopener noreferrer" href="https://www.adacap.com/">Advanced Accelerator
+                Applications</a>
+            </p>
+            <p>
+              3+ Major Clients in the Data Network industry for 1+ years.<br>Main clients:<br><a style="color:#64ffda"
+                target="_blank" rel="noopener noreferrer" href="https://aws.amazon.com/">AWS</a><br><a
+                style="color:#64ffda" target="_blank" rel="noopener noreferrer"
+                href="https://www.google.com/">Google</a><br><a style="color:#64ffda" target="_blank"
+                rel="noopener noreferrer" href="https://www.verizon.com/">Verizon</a><br>
+            </p>
+            <p>
+              3+ Major Clients in the Video-Media Marketing industry for 1+ years.<br>Main clients:<br><a
+                style="color:#64ffda" target="_blank" rel="noopener noreferrer"
+                href="https://www.aller.se/">Aller</a><br><a style="color:#64ffda" target="_blank"
+                rel="noopener noreferrer" href="https://www.eurosportplayer.com/">Eurosport</a><br><a
+                style="color:#64ffda" target="_blank" rel="noopener noreferrer"
+                href="https://dugout.com/">Dugout</a><br><a style="color:#64ffda" target="_blank"
+                rel="noopener noreferrer" href="https://outfit7.com/">OutFit7</a>
+            </p>
+          </div>
+          <div class="modalcontainer-footer">
+            <h3><a href="https://www.linkedin.com/in/andrea-tempestini-1b293342" target="_blank" rel="noopener noreferrer"><img
+                  src="assets/LI-In-Bug.png" width='60px' height='55px'></a></h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- The Modal -->
+      <div id="myModal18" class="modalcontainer">
+
+        <!-- Modal content -->
+        <div class="modalcontainer-content">
+          <div class="modalcontainer-header">
+            <span class="close1">&times;</span>
+            <h2>Manipulating data</h2>
+          </div>
+          <div class="modalcontainer-body">
+            <p>
+              <strong>Client's Management:</strong><br>
+              Below follows an exhaustive list of topics <br>I go through during meetings.<br>
+            </p>
+            <p>
+              Introductions<br>
+              Demos<br>
+              Discoveries<br>
+              Presentations<br>
+              Onboarding<br>
+              Goals setting<br>
+              Troubleshooting<br>
+              Ongoing performance conversations<br>
+              Year-end performance review<br>
+              Performance improvement<br>
+              Feedback and recognition<br>
+              Business growth and development<br>
+              Custom work and solutions<br>
+              Revenue and data analytics<br>
+              Cross-Selling & Up-Selling<br>
+              Compensation and Legals<br>
+              Resources, work environment, and productivity<br>
+              Organizational changes<br>
+              Team and Company effectiveness
+            </p>
+
+          </div>
+          <div class="modalcontainer-footer">
+            <h3><a href="https://www.linkedin.com/in/andrea-tempestini-1b293342" target="_blank" rel="noopener noreferrer"><img src="assets/LI-In-Bug.png"
+                  width='60px' height='55px'></a></h3>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <div class="vl1"></div>
+      <br>
+      <!-- Profile Summary -->
+      <h1 style="color:#e6f1ff">Summary</h1>
+      <p style="text-align:center; color:#8892b0">Below is my profile in numbers.<br>Each section will allow you<br> to estimate my contribution in different fields.</p><br><br>
+
+      <div class="btn-group" style="width:100%">
+        <button id="btn-group1" style="width:25%"><span class="w3-xlarge">5+</span><br>
+          <span style="color:#64ffda">Years of<br>Experience</span></button>
+        <button id="btn-group2" style="width:25%"><span class="w3-xlarge">25+</span><br>
+          <span style="color:#64ffda">Projects<br>Completed</span></button>
+        <button id="btn-group3" style="width:25%"><span class="w3-xlarge">100+</span><br>
+          <span style="color:#64ffda">Client's<br>Portfolios</span></button>
+        <button id="btn-group4" style="width:25%"><span class="w3-xlarge">150+</span><br>
+          <span style="color:#64ffda">Meetings<br>Done</span></button>
+      </div>
+    </div>
+  </div>
+  <br><br><br><br>
+
+
+  <!-- The Modal -->
+  <div id="myModal9" class="modalcontainer">
+
+    <!-- Modal content -->
+    <div class="modalcontainer-content">
+      <div class="modalcontainer-header">
+        <span class="close">&times;</span>
+        <h2>Intro</h2>
+      </div>
+      <div class="modalcontainer-body">
+        <p>
+          <video id="myVideo1" class="myVideo" controls width="100%" src="assets/intro.mov" type="video/mp4">
+          </video>
+        </p>
+      </div>
+      <div class="modalcontainer-footer">
+
+      </div>
+    </div>
+  </div>
+
+  <!-- The Modal -->
+  <div id="myModal10" class="modalcontainer">
+
+    <!-- Modal content -->
+    <div class="modalcontainer-content">
+      <div class="modalcontainer-header">
+        <span class="close">&times;</span>
+        <h2>Sales Methodology</h2>
+      </div>
+      <div class="modalcontainer-body">
+        <p>
+          <video id="myVideo2" class="myVideo" controls width="100%" src="assets/sales-methodology.mov" type="video/mp4">
+          </video>
+        </p>
+      </div>
+      <div class="modalcontainer-footer">
+
+      </div>
+    </div>
+  </div>
+
+  <!-- The Modal -->
+  <div id="myModal11" class="modalcontainer">
+
+    <!-- Modal content -->
+    <div class="modalcontainer-content">
+      <div class="modalcontainer-header">
+        <span class="close">&times;</span>
+        <h2>Solutions Engineering</h2>
+      </div>
+      <div class="modalcontainer-body">
+        <p>
+          <video id="myVideo3" class="myVideo" controls width="100%" src="assets/solutions-engineering.mov" type="video/mp4">
+          </video>
+        </p>
+      </div>
+      <div class="modalcontainer-footer">
+
+      </div>
+    </div>
+  </div>
+
+  <!-- The Modal -->
+  <div id="myModal12" class="modalcontainer">
+
+    <!-- Modal content -->
+    <div class="modalcontainer-content">
+      <div class="modalcontainer-header">
+        <span class="close">&times;</span>
+        <h2>Pre Sales</h2>
+      </div>
+      <div class="modalcontainer-body">
+        <p>
+          <video id="myVideo4" class="myVideo" controls width="100%" src="assets/presales.mov" type="video/mp4">
+          </video>
+        </p>
+      </div>
+      <div class="modalcontainer-footer">
+
+      </div>
+    </div>
+  </div>
+
+  <!-- The Modal -->
+  <div id="myModal13" class="modalcontainer">
+
+    <!-- Modal content -->
+    <div class="modalcontainer-content">
+      <div class="modalcontainer-header">
+        <span class="close">&times;</span>
+        <h2>Post Sales</h2>
+      </div>
+      <div class="modalcontainer-body">
+        <p>
+          <video id="myVideo5" class="myVideo" controls width="100%" src="assets/postsales.mov" type="video/mp4">
+          </video>
+        </p>
+      </div>
+      <div class="modalcontainer-footer">
+
+      </div>
+    </div>
+  </div>
+
+  <!-- The Modal -->
+  <div id="myModal14" class="modalcontainer">
+
+    <!-- Modal content -->
+    <div class="modalcontainer-content">
+      <div class="modalcontainer-header">
+        <span class="close">&times;</span>
+        <h2>Summary</h2>
+      </div>
+      <div class="modalcontainer-body">
+        <p>
+          <video id="myVideo6" class="myVideo" controls width="100%" src="assets/summary.mov" type="video/mp4">
+          </video>
+        </p>
+      </div>
+      <div class="modalcontainer-footer">
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Grid for work tables -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="work"><br>
+    <div id="techwork">
+    <h1 class="decorated"><span>My Work</span></h1>
+    <div class="vl1"></div>
+    <div class="profile">
+      <h3><img src="assets/dev2.png" alt="" width='350px' height='200px' id='sectionIcon'></h3>
+      <div class="section-text-block">
+        <h4 style="color:#64ffda">Content</h4>
+        <p>This is the media section.<br>Watch 6 videos showcasing the aspects<br>directly tied to solutions engineering.<br>This is to allow the user gaining a practical understanding.
+        </p>
+      </div>
+      <br>
+    </div>
+    <div class="vl1"></div>
+    <br>
+    <br>
+
+    <!-- Boxes -->
+    <div class="innerbox">
+      <div class="thumbnails">
+
+        <div class="thumbnails">
+          <a class="image fit"></a>
+          <div class="innerbox">
+            <div class="ffolder big blue">
+              <span>Profile Intro</span>
+              <br><br><br><br><br><br>
+              <button class="button fit" id="button fit1">Watch</button>
+            </div>
+          </div>
+        </div>
+        <div class="thumbnails">
+          <a class="image fit"></a>
+          <div class="innerbox">
+            <div class="ffolder big blue">
+              <span>Sales Methodology</span>
+              <br><br><br><br><br><br>
+              <button class="button fit" id="button fit2">Watch</button>
+            </div>
+          </div>
+        </div>
+        <div class="thumbnails">
+          <a class="image fit"></a>
+          <div class="innerbox">
+            <div class="ffolder big blue">
+              <span>Solutions Engineering</span>
+              <br><br><br><br><br><br>
+              <button class="button fit" id="button fit3">Watch</button>
+            </div>
+          </div>
+        </div>
+        <div class="thumbnails">
+          <a class="image fit"></a>
+          <div class="innerbox">
+            <div class="ffolder big blue">
+              <span>Pre-Sales Stage</span>
+              <br><br><br><br><br><br>
+              <button class="button fit" id="button fit4">Watch</button>
+            </div>
+          </div>
+        </div>
+        <div class="thumbnails">
+          <a class="image fit"></a>
+          <div class="innerbox">
+            <div class="ffolder big blue">
+              <span>Post-Sales Stage</span>
+              <br><br><br><br><br><br>
+              <button class="button fit" id="button fit5">Watch</button>
+            </div>
+          </div>
+        </div>
+        <div class="thumbnails">
+          <a class="image fit"></a>
+          <div class="innerbox">
+            <div class="ffolder big blue">
+              <span>Profile Summary</span>
+              <br><br><br><br><br><br>
+              <button class="button fit" id="button fit6">Watch</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br><br><br>
+    </div>
+
+
+    <!-- The Modal -->
+    <div id="myModal1" class="modalcontainer">
+
+      <!-- Modal content -->
+      <div class="modalcontainer-content">
+        <div class="modalcontainer-header">
+          <span class="close2">&times;</span>
+          <h2>Manipulating data</h2>
+        </div>
+        <div class="modalcontainer-body">
+          <p>
+            <strong>Context:</strong><br>
+            Granular access control<br>
+            RESTful API design practices<br>
+            Error handling<br>
+            Ease of use
+          </p>
+          <p>
+            <strong>Operations:</strong><br>
+            Account management<br>
+            Player management<br>
+            Playlist management<br>
+            Video management<br>
+            Webhooks management
+          </p>
+          <p>
+            <strong>Security Layers:</strong><br>
+            DRM protection<br>
+            URL signing in<br>
+            Cyber security protocols<br>
+            Protection against replay attacks<br>
+            Authenticating API requests
+          </p>
+          <p>
+            <strong>Tools:</strong><br>
+            VSC<br>
+            Atom<br>
+            Charles<br>
+            Postman<br>
+            PostgreSQL<br>
+            MAMP<br>
+            GitHub<br>
+            JIRA
+          </p>
+          <p>
+            <strong>Output formats:</strong><br>
+            Python<br>
+            JSON<br>
+            XML<br>
+            PHP
+          </p>
+        </div>
+        <div class="modalcontainer-footer">
+          <h3><a href="https://github.com/ATempestini" target="_blank" rel="noopener noreferrer"><img src="assets/github.png"
+                width='60px' height='55px'></a></h3>
+        </div>
+      </div>
+    </div>
+
+    <div id="myModal2" class="modalcontainer">
+
+      <div class="modalcontainer-content">
+        <div class="modalcontainer-header">
+          <span class="close2">&times;</span>
+          <h2>User Interface</h2>
+        </div>
+        <div class="modalcontainer-body">
+          <p>
+            <strong>Context:</strong><br>
+            Product design<br>
+            Integration of features<br>
+            Error handling<br>
+            Customisation
+          </p>
+          <p>
+            <strong>Operations:</strong><br>
+            Product design & behaviour<br>
+            Player management<br>
+            Playlist management<br>
+            Video management<br>
+            Content branding
+          </p>
+          <p>
+            <strong>Tools:</strong><br>
+            VSC<br>
+            Atom<br>
+            VisualXML<br>
+            VisualJSON<br>
+            Charles<br>
+            Postman<br>
+            GitHub<br>
+            JIRA
+          </p>
+          <p>
+            <strong>Output formats:</strong><br>
+            JavaScript<br>
+            jQuery<br>
+            React<br>
+            Angular<br>
+            HTML<br>
+            JSON<br>
+            XML<br>
+            CSS
+          </p>
+        </div>
+        <div class="modalcontainer-footer">
+          <h3><a href="https://github.com/ATempestini" target="_blank" rel="noopener noreferrer"><img src="assets/github.png"
+                width='60px' height='55px'></a></h3>
+        </div>
+      </div>
+    </div>
+
+    <div id="myModal3" class="modalcontainer">
+
+      <div class="modalcontainer-content">
+        <div class="modalcontainer-header">
+          <span class="close2">&times;</span>
+          <h2>Technical Support</h2>
+        </div>
+        <div class="modalcontainer-body">
+          <p>
+            <strong>Context:</strong><br>
+            Product usage<br>
+            Integration of features<br>
+            Web design<br>
+            Platform support<br>
+            Post-sales support
+          </p>
+          <p>
+            <strong>Operations:</strong><br>
+            Product review<br>
+            Debugging<br>
+            Troubleshooting<br>
+            VOD/LIVE support<br>
+            Product guidelines
+          </p>
+          <p>
+            <strong>Tools:</strong><br>
+            VSC<br>
+            Atom<br>
+            Squash<br>
+            JSONLint<br>
+            VisualXML<br>
+            VisualJSON<br>
+            Console Dev Tools<br>
+            Charles<br>
+            GitHub
+          </p>
+          <p>
+            <strong>Output formats:</strong><br>
+            JavaScript<br>
+            jQuery<br>
+            React<br>
+            Angular<br>
+            HTML<br>
+            JSON<br>
+            XML<br>
+            CSS<br>
+            Python<br>
+            PHP<br>
+            Swift<br>
+            Objective-C<br>
+            Ruby<br>
+            Java
+          </p>
+        </div>
+        <div class="modalcontainer-footer">
+          <h3><a href="https://github.com/ATempestini" target="_blank" rel="noopener noreferrer"><img src="assets/github.png"
+                width='60px' height='55px'></a></h3>
+        </div>
+      </div>
+    </div>
+
+    <div id="myModal4" class="modalcontainer">
+
+      <div class="modalcontainer-content">
+        <div class="modalcontainer-header">
+          <span class="close2">&times;</span>
+          <h2>SDK Integration</h2>
+        </div>
+        <div class="modalcontainer-body">
+          <p>
+            <strong>Context:</strong><br>
+            Product usage<br>
+            Integration of features<br>
+            Application design<br>
+            Technical Support
+          </p>
+          <p>
+            <strong>Operations:</strong><br>
+            Product review<br>
+            Managing incompatibilities<br>
+            Managing dependencies<br>
+            Managing assets<br>
+            Debugging<br>
+            Troubleshooting<br>
+            Customisations<br>
+            Product guidelines
+          </p>
+          <p>
+            <strong>Tools:</strong><br>
+            X-Code<br>
+            Android Studio<br>
+            CocoaPods<br>
+            Sketch<br>
+            Icons8<br>
+            Icon Set Creator<br>
+            Postman<br>
+            Dash<br>
+            Charles<br>
+            GitHub
+          </p>
+          <p>
+            <strong>Output formats:</strong><br>
+            Swift<br>
+            Objective-C<br>
+            Ruby<br>
+            Java
+          </p>
+        </div>
+        <div class="modalcontainer-footer">
+          <h3><a href="https://github.com/ATempestini" target="_blank" rel="noopener noreferrer"><img src="assets/github.png"
+                width='60px' height='55px'></a></h3>
+        </div>
+      </div>
+    </div>
+
+    <div id="myModal5" class="modalcontainer">
+
+      <div class="modalcontainer-content">
+        <div class="modalcontainer-header">
+          <span class="close2">&times;</span>
+          <h2>Advertising Performance</h2>
+        </div>
+        <div class="modalcontainer-body">
+          <p>
+            <strong>Context:</strong><br>
+            Ad Clients<br>
+            Ad Integration<br>
+            Header Bidding<br>
+            Ad Performance
+          </p>
+          <p>
+            <strong>Operations:</strong><br>
+            Performance monitoring<br>
+            Ad tracking<br>
+            Ad Troubleshooting<br>
+            Definitition of Ad rules<br>
+            Video Ad targeting
+            Customisations<br>
+            Analytics tracking
+          </p>
+          <p>
+            <strong>Tools:</strong><br>
+            Ad inspectors<br>
+            Charles<br>
+            Console Dev Tools<br>
+          </p>
+          <p>
+            <strong>Output formats:</strong><br>
+            Vast<br>
+            GoogIMA<br>
+            Freewheel<br>
+            DAI
+          </p>
+        </div>
+        <div class="modalcontainer-footer">
+          <h3><a href="https://github.com/ATempestini" target="_blank" rel="noopener noreferrer"><img src="assets/github.png" width='60px'
+                height='55px'></a></h3>
+        </div>
+      </div>
+    </div>
+
+    <div id="myModal6" class="modalcontainer">
+
+      <div class="modalcontainer-content">
+        <div class="modalcontainer-header">
+          <span class="close2">&times;</span>
+          <h2>Analytics Performance</h2>
+        </div>
+        <div class="modalcontainer-body">
+          <p>
+            <strong>Context:</strong><br>
+            Geolocation<br>
+            Performance<br>
+            Reporting<br>
+            Consumption<br>
+            Security
+          </p>
+          <p>
+            <strong>Operations:</strong><br>
+            Assets monitoring<br>
+            Ad performance measuring<br>
+            VOD/Live performance measuring<br>
+            Domain detection<br>
+            Time-range reports<br>
+            Data cross-check<br>
+            Troubleshooting
+          </p>
+          <p>
+            <strong>Tools:</strong><br>
+            Platform<br>
+            Third-party SaaS<br>
+            Customer reports<br>
+          </p>
+          <p>
+            <strong>Output formats:</strong><br>
+            CSV<br>
+            Excel<br>
+            Word<br>
+            PowerPoint
+          </p>
+        </div>
+        <div class="modalcontainer-footer">
+          <h3><a href="https://www.jwplayer.com/" target="_blank" rel="noopener noreferrer"><img src="assets/jw.png" width='60px'
+                height='55px'></a></h3>
+        </div>
+      </div>
+    </div>
+
+    <div id="myModal7" class="modalcontainer">
+
+      <div class="modalcontainer-content">
+        <div class="modalcontainer-header">
+          <span class="close2">&times;</span>
+          <h2>Technology Adoption</h2>
+        </div>
+        <div class="modalcontainer-body">
+          <p>
+            <strong>Context:</strong><br>
+            Discovery<br>
+            Value selling<br>
+            Presentations<br>
+            POC<br>
+            Support
+          </p>
+          <p>
+            <strong>Operations:</strong><br>
+            Agenda settings<br>
+            Conducting meetings<br>
+            Tech Match<br>
+            Product demos<br>
+            Proof of concepts/Trials<br>
+            QBR<br>
+            Migrations<br>
+            General support
+          </p>
+          <p>
+            <strong>Tools:</strong><br>
+            Platform<br>
+            Company website<br>
+            Internal resources<br>
+            Distribution channels<br>
+          </p>
+        </div>
+        <div class="modalcontainer-footer">
+          <h3><a href="https://www.jwplayer.com/" target="_blank" rel="noopener noreferrer"><img src="assets/jw.png" width='60px'
+                height='55px'></a></h3>
+        </div>
+      </div>
+    </div>
+
+    <div id="myModal8" class="modalcontainer">
+
+      <div class="modalcontainer-content">
+        <div class="modalcontainer-header">
+          <span class="close2">&times;</span>
+          <h2>Operational Processes</h2>
+        </div>
+        <div class="modalcontainer-body">
+          <p>
+            <strong>Context:</strong><br>
+            Content management<br>
+            Integration of Features<br>
+            Customisation<br>
+            Sales<br>
+            Support
+          </p>
+          <p>
+            <strong>Operations:</strong><br>
+            Project management<br>
+            Planning/Monitoring<br>
+            Workflow management<br>
+            Data management<br>
+            Account management<br>
+            Conducting meetings<br>
+            Designing solutions<br>
+            Up-Selling<br>
+            Cross-Selling<br>
+            General support
+          </p>
+          <p>
+            <strong>Tools:</strong><br>
+            Platform<br>
+            Company website<br>
+            Internal resources<br>
+            Distribution channels<br>
+          </p>
+        </div>
+        <div class="modalcontainer-footer">
+          <h3><a href="https://www.jwplayer.com/" target="_blank" rel="noopener noreferrer"><img src="assets/jw.png" width='60px' height='55px'></a></h3>
+        </div>
+      </div>
+    </div>
+    <br>
+    </div>
+    </div>
+    <br><br>
+  
+    <!-- Flipping Cards -->
+    <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="skills"><br>
+    <div id="techskills">
+      <h1 class="decorated"><span>My Skills</span></h1>
+      <div class="vl1"></div>
+      <div class="wrapper">
+        <div class="profile">
+          <h3><img src="assets/programming.jpg" alt="" width='350px' height='200px' id='sectionIcon'></h3>
+          <div class="section-text-block">
+            <h4 style="color:#64ffda">Data</h4>
+            <p>This section goes into technical details on all skills and tools used.<br>Hover on each card, click on the main button, and explore the category.
+            </p>
+          </div>
+          <div class="vl1"></div>
+        <h1 style="color:#e6f1ff">Operations</h1>
+        <p style="text-align:center; color:#8892b0">Access all relevant areas<br>to learn more</p>
+          <div class="vl1"></div>
+          <br><br><br>
+
+          <div class="cols">
+            <div class="col" ontouchstart="this.classList.toggle('hover');">
+              <div class="container">
+                <div class="front" style="background-image: url(assets/bluefolder.png)">
+                  <div class="inner">
+                    <p>Back-end</p>
+                    <span style="color:#64ffda; font-size:14px; font-size:14px; font-family:Exan-Regular">Manipulating<br>data</span>
+                  </div>
+                </div>
+                <div class="back" style="background-image: url(assets/programming1.jpg)">
+                  <div class="inner">
+                    <button class="w3-button w3-black w3-margin-bottom" id="myBtn_1">Explore</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col" ontouchstart="this.classList.toggle('hover');">
+              <div class="container">
+                <div class="front" style="background-image: url(assets/bluefolder.png)">
+                  <div class="inner">
+                    <p>Front-end</p>
+                    <span style="color:#64ffda; font-size:14px; font-family:Exan-Regular">User<br>Interface</span>
+                  </div>
+                </div>
+                <div class="back" style="background-image: url(assets/programming2.jpg)">
+                  <div class="inner">
+                    <button class="w3-button w3-black w3-margin-bottom" id="myBtn_2">Explore</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col" ontouchstart="this.classList.toggle('hover');">
+              <div class="container">
+                <div class="front" style="background-image: url(assets/bluefolder.png)">
+                  <div class="inner">
+                    <p>Support</p>
+                    <span style="color:#64ffda; font-size:14px; font-family:Exan-Regular">Technical<br>Support</span>
+                  </div>
+                </div>
+                <div class="back" style="background-image: url(assets/techsupport.jpg)">
+                  <div class="inner">
+                    <button class="w3-button w3-black w3-margin-bottom" id="myBtn_3">Explore</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col" ontouchstart="this.classList.toggle('hover');">
+              <div class="container">
+                <div class="front" style="background-image: url(assets/bluefolder.png)">
+                  <div class="inner">
+                    <p>SDK</p>
+                    <span style="color:#64ffda; font-size:14px; font-family:Exan-Regular">Application Development</span>
+                  </div>
+                </div>
+                <div class="back" style="background-image: url(assets/sdk3.jpg)">
+                  <div class="inner">
+                    <button class="w3-button w3-black w3-margin-bottom" id="myBtn_4">Explore</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col" ontouchstart="this.classList.toggle('hover');">
+              <div class="container">
+                <div class="front" style="background-image: url(assets/bluefolder.png)">
+                  <div class="inner">
+                    <p>Advertising</p>
+                    <span style="color:#64ffda; font-size:14px; font-family:Exan-Regular">Advertising Performance</span>
+                  </div>
+                </div>
+                <div class="back" style="background-image: url(assets/ads8.jpg)">
+                  <div class="inner">
+                    <button class="w3-button w3-black w3-margin-bottom" id="myBtn_5">Explore</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col" ontouchstart="this.classList.toggle('hover');">
+              <div class="container">
+                <div class="front" style="background-image: url(assets/bluefolder.png)">
+                  <div class="inner">
+                    <p>Analytics</p>
+                    <span style="color:#64ffda; font-size:14px; font-family:Exan-Regular">Analytics<br> Performance</span>
+                  </div>
+                </div>
+                <div class="back" style="background-image: url(assets/analytics1.jpg)">
+                  <div class="inner">
+                    <button class="w3-button w3-black w3-margin-bottom" id="myBtn_6">Explore</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col" ontouchstart="this.classList.toggle('hover');">
+              <div class="container">
+                <div class="front" style="background-image: url(assets/bluefolder.png)">
+                  <div class="inner">
+                    <p>Pre-Sales</p>
+                    <span style="color:#64ffda; font-size:14px; font-family:Exan-Regular">Technology<br>Adoption</span>
+                  </div>
+                </div>
+                <div class="back" style="background-image: url(assets/sales1.jpg)">
+                  <div class="inner">
+                    <button class="w3-button w3-black w3-margin-bottom" id="myBtn_7">Explore</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col" ontouchstart="this.classList.toggle('hover');">
+              <div class="container">
+                <div class="front" style="background-image: url(assets/bluefolder.png)">
+                  <div class="inner">
+                    <p>Post-Sales</p>
+                    <span style="color:#64ffda; font-size:14px; font-family:Exan-Regular">Operational Processes</span>
+                  </div>
+                </div>
+                <div class="back" style="background-image: url(assets/sales2.jpg)">
+                  <div class="inner">
+                    <button class="w3-button w3-black w3-margin-bottom" id="myBtn_8">Explore</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><br><br><br>
+
+        <!-- End Grid -->
+      </div>
+
+      <!-- End About Section -->
+    <!-- </div> -->
+
+    <div class="vl"></div>
+
+    <!-- Portfolio Section -->
+
+    <!-- The Modal -->
+    <div id="myModal19" class="modalcontainer">
+
+      <!-- Modal content -->
+      <div class="modalcontainer-content">
+        <div class="modalcontainer-header">
+          <span class="close3">&times;</span>
+          <h2>HTML</h2>
+        </div>
+        <div class="modalcontainer-body">
+          <p>
+            <strong>Usage:</strong><br>
+            Web Applications <br>Custom Layout<br>Code Snippet<br>
+          </p>
+          <p>
+          <pre style="background-color: white;"><code class="language-html">
+      &lt;div class=&quot;modalcontainer-content&quot;&gt;
+      &lt;div class=&quot;modalcontainer-header&quot;&gt;
+      &lt;span class=&quot;close3&quot;&gt;&amp;times;&lt;/span&gt;
+      &lt;h2&gt;HTML&lt;/h2&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modalcontainer-body&quot;&gt;
+      &lt;p&gt;
+        </code></pre>
+          </p>
+
+        </div>
+        <div class="modalcontainer-footer">
+          <h3><a href="https://github.com/ATempestini" target="_blank" rel="noopener noreferrer"><img src="assets/github.png"
+                width='60px' height='55px'></a></a></h3>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- The Modal -->
+    <div id="myModal20" class="modalcontainer">
+
+      <!-- Modal content -->
+      <div class="modalcontainer-content">
+        <div class="modalcontainer-header">
+          <span class="close3">&times;</span>
+          <h2>CSS</h2>
+        </div>
+        <div class="modalcontainer-body">
+          <p>
+            <strong>Usage:</strong><br>
+            Web Applications <br>Custom Layout<br>Code Snippet<br>
+          </p>
+          <p>
+          <pre style="background-color: white;"><code class="language-css">
+          .mySlides:hover {
+          display: block;
+          padding: 10px;
+          text-align: center;
+          font-size: 3em; font-family: sans-serif;
+          background: linear-gradient(
+          120deg,
+          transparent,
+          rgba(138, 250, 218, 0.668),
+          transparent
+          );
+          transition: all 650ms;
+          box-shadow: 1px 1px 25px 10px blue;
+          }
+          </code></pre>
+          </p>
+
+        </div>
+        <div class="modalcontainer-footer">
+          <h3><a href="https://github.com/ATempestini" target="_blank" rel="noopener noreferrer"><img src="assets/github.png"
+                width='60px' height='55px'></a></h3>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- The Modal -->
+    <div id="myModal21" class="modalcontainer">
+
+      <!-- Modal content -->
+      <div class="modalcontainer-content">
+        <div class="modalcontainer-header">
+          <span class="close3">&times;</span>
+          <h2>BOOTSTRAP</h2>
+        </div>
+        <div class="modalcontainer-body">
+          <p>
+            <strong>Usage:</strong><br>
+            Web Applications <br>Custom Layout<br>Code Snippet<br>
+          </p>
+          <p>
+          <pre style="background-color: white;"><code class="language-css">
+          .menu .accordion-heading { <br>
+          position: relative; }<br>
+          .menu .accordion-heading .edit {<br>
+          position: absolute;<br>
+          top: 8px;<br>
+          right: 30px;<br>
+          }
+          .menu .area { <br>
+          border-left: 4px solid #f38787; }<br>
+          .menu .equipamento { <br>
+          border-left: 4px solid #65c465; }<br>
+          .menu .ponto { <br>
+          border-left: 4px solid #98b3fa; }<br>
+          .menu .collapse.in { <br>
+          overflow: visible; }
+        </code></pre>
+          </p>
+
+        </div>
+        <div class="modalcontainer-footer">
+          <h3><a href="https://github.com/ATempestini" target="_blank" rel="noopener noreferrer"><img src="assets/github.png"
+                width='60px' height='55px'></a></a></h3>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- The Modal -->
+    <div id="myModal22" class="modalcontainer">
+
+      <!-- Modal content -->
+      <div class="modalcontainer-content">
+        <div class="modalcontainer-header">
+          <span class="close3">&times;</span>
+          <h2>XML</h2>
+        </div>
+        <div class="modalcontainer-body">
+          <p>
+            <strong>Usage:</strong><br>
+            Data Imports <br>Ad Structure<br>Code Snippet<br>
+          </p>
+          <p>
+          <pre style="background-color: white;"><code class="language-xml">
+        &lt;InLine&gt;
+        &lt;AdSystem version=&quot;2.0&quot;&gt;<br>
+        &lt;JW Player&lt;/AdSystem&gt;<br>
+        &lt;AdTitle&gt;Static Tag&lt;/AdTitle&gt;<br>
+        &lt;Error&gt;https://example&lt;/Error&gt;<br>
+        &lt;Impression&gt;https://example/Impression&gt;<br>
+        &lt;Creatives&gt;
+        </code></pre>
+          </p>
+
+        </div>
+        <div class="modalcontainer-footer">
+          <h3><a href="https://github.com/ATempestini" target="_blank" rel="noopener noreferrer"><img src="assets/github.png"
+                width='60px' height='55px'></a></a></h3>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- The Modal -->
+    <div id="myModal23" class="modalcontainer">
+
+      <!-- Modal content -->
+      <div class="modalcontainer-content">
+        <div class="modalcontainer-header">
+          <span class="close3">&times;</span>
+          <h2>JSON</h2>
+        </div>
+        <div class="modalcontainer-body">
+          <p>
+            <strong>Usage:</strong><br>
+            Configuration <br>Custom Features<br>Code Snippet<br>
+          </p>
+          <p>
+          <pre style="background-color: white;"><code class="language-js">
+            "width": `50%`,
+            "autostart": true,
+            "mute": true,
+            "controls": true,
+            "preload": "none",
+            "duration":51,
+            "embedUrl":"",
+            "pageUrl":"",
+            "isLive":false,
+            "isShareable":true,
+            </code></pre>
+          </p>
+
+        </div>
+        <div class="modalcontainer-footer">
+          <h3><a href="https://github.com/ATempestini" target="_blank" rel="noopener noreferrer"><img src="assets/github.png"
+                width='60px' height='55px'></a></a></h3>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- The Modal -->
+    <div id="myModal24" class="modalcontainer">
+
+      <!-- Modal content -->
+      <div class="modalcontainer-content">
+        <div class="modalcontainer-header">
+          <span class="close3">&times;</span>
+          <h2>ASP</h2>
+        </div>
+        <div class="modalcontainer-body">
+          <p>
+            <strong>Usage:</strong><br>
+            Web Applications <br>Dynamic Rendering<br>Code Snippet<br>
+          </p>
+          <p>
+          <pre style="background-color: white;"><code class="language-html">
+            <% Dim cars(2) subject(0)="player" <br />
+            subject(1)="live" <br />
+            subject(2)="VOD" <br />
+            For Each x In subject response.write(x & "" ) Next %>
+            </code></pre>
+          </p>
+
+        </div>
+        <div class="modalcontainer-footer">
+          <h3><a href="https://github.com/ATempestini" target="_blank" rel="noopener noreferrer"><img src="assets/github.png"
+                width='60px' height='55px'></a></a></h3>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- The Modal -->
+    <div id="myModal25" class="modalcontainer">
+
+      <!-- Modal content -->
+      <div class="modalcontainer-content">
+        <div class="modalcontainer-header">
+          <span class="close3">&times;</span>
+          <h2>JAVASCRIPT</h2>
+        </div>
+        <div class="modalcontainer-body">
+          <p>
+            <strong>Usage:</strong><br>
+            Web Applications <br>Custom Code<br>API<br>Code Snippet<br>
+          </p>
+          <p>
+          <pre style="background-color: white;"><code class="language-js">
+          var i;
+          var slides = document.getElementsById("mySlides");<br>
+          var dots = document.getElementsByClassName("dot");<br>
+          if (n > slides.length) { slideIndex = 1 }<br>
+          if (n < 1) { slideIndex=slides.length }<br>
+          for (i=0; i < slides.length; i++) <br>
+          { slides[i].style.display="none" ; } <br>
+          for (i=0; i < dots.length; i++) <br>
+          { dots[i].className=dots[i].<br>
+          slides[slideIndex - 1].style.display="block" ; <br>
+          dots[slideIndex - 1].className +=" dotActive" ; }
+          </code></pre>
+          </p>
+          </p>
+
+        </div>
+        <div class="modalcontainer-footer">
+          <h3><a href="https://github.com/ATempestini" target="_blank" rel="noopener noreferrer"><img src="assets/github.png"
+                width='60px' height='55px'></a></a></h3>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- The Modal -->
+    <div id="myModal26" class="modalcontainer">
+
+      <!-- Modal content -->
+      <div class="modalcontainer-content">
+        <div class="modalcontainer-header">
+          <span class="close3">&times;</span>
+          <h2>JQUERY</h2>
+        </div>
+        <div class="modalcontainer-body">
+          <p>
+            <strong>Usage:</strong><br>
+            Web applications <br>Custom Code<br>Code Snippet<br>
+          </p>
+          <p>
+            <pre style="background-color: white;"><code class="language-js">
+              $("a.scrollTo").each(function () {
+              if (scrollTo == $(this).attr('data-scrollTo')) {
+              $(this).addClass('active');
+              } else {
+              $(this).removeClass('active');
+              }
+              });
+              </code></pre>
+          </p>
+
+        </div>
+        <div class="modalcontainer-footer">
+          <h3><a href="https://github.com/ATempestini" target="_blank" rel="noopener noreferrer"><img src="assets/github.png"
+                width='60px' height='55px'></a></a></h3>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- The Modal -->
+    <div id="myModal27" class="modalcontainer">
+
+      <!-- Modal content -->
+      <div class="modalcontainer-content">
+        <div class="modalcontainer-header">
+          <span class="close3">&times;</span>
+          <h2>PYTHON</h2>
+        </div>
+        <div class="modalcontainer-body">
+          <p>
+            <strong>Usage:</strong><br>
+            Data Manipulation<br>API<br>Code Snippet<br>
+          </p>
+          <p>
+            <pre style="background-color: white;"><code class="language-js">
+          except player.errors.APIError as e:<br>
+          logging.error("error updating\n{}".format(e))<br>
+          sys.exit(str(e))<br>
+          logging.info(response.json_body)
+            </code></pre>
+          </p>
+
+        </div>
+        <div class="modalcontainer-footer">
+          <h3><a href="https://github.com/ATempestini" target="_blank" rel="noopener noreferrer"><img src="assets/github.png"
+                width='60px' height='55px'></a></a></h3>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- The Modal -->
+    <div id="myModal28" class="modalcontainer">
+
+      <!-- Modal content -->
+      <div class="modalcontainer-content">
+        <div class="modalcontainer-header">
+          <span class="close3">&times;</span>
+          <h2>PHP</h2>
+        </div>
+        <div class="modalcontainer-body">
+          <p>
+            <strong>Usage:</strong><br>
+            Data Manipulation<br>API<br>Code Snippet<br>
+          </p>
+          <p>
+            <pre style="background-color: white;"><code class="language-js">
+            $ch = curl_init($uploadUrl);
+            curl_setopt($ch, CURLOPT_FOLLOWLOCATION, false );
+            curl_setopt($ch, CURLOPT_HTTPHEADER, 
+            array('Content-type: multipart/form-data'));
+            curl_setopt($ch, CURLOPT_POST, true);
+            curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+            curl_setopt($ch, CURLOPT_POSTFIELDS, [
+            'file' => curl_file_create($target_file)
+            ]);
+            </code></pre>
+          </p>
+
+        </div>
+        <div class="modalcontainer-footer">
+          <h3><a href="https://github.com/ATempestini" target="_blank" rel="noopener noreferrer"><img src="assets/github.png"
+                width='60px' height='55px'></a></a></h3>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- The Modal -->
+    <div id="myModal29" class="modalcontainer">
+
+      <!-- Modal content -->
+      <div class="modalcontainer-content">
+        <div class="modalcontainer-header">
+          <span class="close3">&times;</span>
+          <h2>RUBY-ON-RAILS</h2>
+        </div>
+        <div class="modalcontainer-body">
+          <p>
+            <strong>Usage:</strong><br>
+            Data Manipulation<br>API<br>Code Snippet<br>
+          </p>
+          <p>
+            <pre style="background-color: white;"><code class="language-js">
+            it 'has a version number' do
+            expect(Player::API::Client::VERSION).not_to be nil
+            end
+            
+            describe '::new' do
+            context 'without any parameters' do<br />
+            it 'should raise an error' do<br />
+            expect { Player::API::Client.new }.
+            to raise_error(ArgumentError)<br />
+            expect { Player::API::Client.new(key: API_KEY) }.<br>
+            to raise_error(ArgumentError)<br>
+            expect { Player::API::Client.new(secret: API_SECRET) }.<br>
+            to raise_error(ArgumentError)
+            end
+            </code></pre>
+          </p>
+
+        </div>
+        <div class="modalcontainer-footer">
+          <h3><a href="https://github.com/ATempestini" target="_blank" rel="noopener noreferrer"><img src="assets/github.png"
+                width='60px' height='55px'></a></a></h3>
+        </div>
+      </div>
+    </div>
+    <br>
+
+    <!-- The Modal -->
+    <div id="myModal30" class="modalcontainer">
+
+      <!-- Modal content -->
+      <div class="modalcontainer-content">
+        <div class="modalcontainer-header">
+          <span class="close3">&times;</span>
+          <h2>JAVA</h2>
+        </div>
+        <div class="modalcontainer-body">
+          <p>
+            <strong>Usage:</strong><br>
+            Data Manipulation<br>SDK Development<br>Code Snippet<br>
+          </p>
+          <p>
+            <pre style="background-color: white;"><code class="language-js">
+            public void PostRequestUrlEncoding() <br>
+            throws Exception {
+            final HashMap<String, String> params =<br>
+            new HashMap<String, String>()<br>
+            {{put("url", "media.com +!~");}};<br>
+            final JSONObject expectedResponse = new JSONObject();<br>
+            expectedResponse.put("status", 200);
+            </code></pre>
+          </p>
+
+        </div>
+        <div class="modalcontainer-footer">
+          <h3><a href="https://github.com/ATempestini" target="_blank" rel="noopener noreferrer"><img src="assets/github.png"
+                width='60px' height='55px'></a></a></h3>
+        </div>
+      </div>
+    </div>
+    <br>
+
+    <!-- The Modal -->
+    <div id="myModal31" class="modalcontainer">
+
+      <!-- Modal content -->
+      <div class="modalcontainer-content">
+        <div class="modalcontainer-header">
+          <span class="close3">&times;</span>
+          <h2>OBJECTIVE-C</h2>
+        </div>
+        <div class="modalcontainer-body">
+          <p>
+            <strong>Usage:</strong><br>
+            Data Manipulation<br>SDK Development<br>Code Snippet<br>
+          </p>
+          <p>
+            <pre style="background-color: white;"><code class="language-js">
+            Config *config = [[Config alloc] init];<br>
+            config.file = @"http://example.com/hls.m3u8";<br>
+            self.player = [[Controller alloc] initWithConfig:config];
+            </code></pre>
+          </p>
+
+        </div>
+        <div class="modalcontainer-footer">
+          <h3><a href="https://github.com/ATempestini" target="_blank" rel="noopener noreferrer"><img src="assets/github.png"
+                width='60px' height='55px'></a></a></h3>
+        </div>
+      </div>
+    </div>
+    <br>
+
+    <!-- The Modal -->
+    <div id="myModal32" class="modalcontainer">
+
+      <!-- Modal content -->
+      <div class="modalcontainer-content">
+        <div class="modalcontainer-header">
+          <span class="close3">&times;</span>
+          <h2>SWIFT</h2>
+        </div>
+        <div class="modalcontainer-body">
+          <p>
+            <strong>Usage:</strong><br>
+            Data Manipulation<br>SDK Development<br>Code Snippet<br>
+          </p>
+          <p>
+            <pre style="background-color: white;"><code class="language-js">
+            let fileManager = FileManager.default<br>
+            var processedPaths = [String]()<br>
+            
+            let oldName: String<br>
+            let newName: String<br>
+            
+            // MARK: - Init<br>
+            
+            init(oldName: String, newName: String) {<br>
+            self.oldName = oldName<br>
+            self.newName = newName
+            }
+            </code></pre>
+          </p>
+
+        </div>
+        <div class="modalcontainer-footer">
+          <h3><a href="https://github.com/ATempestini" target="_blank" rel="noopener noreferrer"><img src="assets/github.png"
+                width='60px' height='55px'></a></a></h3>
+        </div>
+      </div>
+    </div>
+    <!-- The Modal -->
+    <div id="myModal33" class="modalcontainer">
+
+      <!-- Modal content -->
+      <div class="modalcontainer-content">
+        <div class="modalcontainer-header">
+          <span class="close3">&times;</span>
+          <h2>ANGULAR</h2>
+        </div>
+        <div class="modalcontainer-body">
+          <p>
+            <strong>Usage:</strong><br>
+            Web & Mobile Applications <br>Data Binding<br>Code Snippet<br>
+          </p>
+          <p>
+            <pre style="background-color: white;"><code class="language-js">
+            import {{ '{' }} Pipe, PipeTransform {{ '}' }}<br>
+            from '@angular/core';<br>
+            
+            @Pipe({{ '{' }}name: 'reverseStr'{{ '}' }})<br>
+            transform(value: string): string {{ '{' }}<br>
+            let newStr: string = "";<br>
+            for (var i = value.length - 1; i >= 0; i--) <br>
+            {{ '{' }}<br>
+            newStr += value.charAt(i);<br>
+            {{ '}' }}<br>
+            return newStr;<br>
+            {{ '}' }}<br>
+            {{ '}' }}
+            </code></pre>
+          </p>
+
+        </div>
+        <div class="modalcontainer-footer">
+          <h3><a href="https://github.com/ATempestini" target="_blank" rel="noopener noreferrer"><img src="assets/github.png"
+                width='60px' height='55px'></a></a></h3>
+        </div>
+      </div>
+    </div>
+    <!-- The Modal -->
+    <div id="myModal34" class="modalcontainer">
+
+      <!-- Modal content -->
+      <div class="modalcontainer-content">
+        <div class="modalcontainer-header">
+          <span class="close3">&times;</span>
+          <h2>REACT</h2>
+        </div>
+        <div class="modalcontainer-body">
+          <p>
+            <strong>Usage:</strong><br>
+            Web Applications <br>Custom Layout<br>Code Snippet<br>
+          </p>
+          <p>
+            <pre style="background-color: white;"><code class="language-js">
+            fetch("/some/resource")
+            .then(response => {
+            if (!response.ok) {
+            throw new Error("code" + response.status);
+            }
+            return response.json();
+            })
+            .then(data => {
+            // ...use data here...
+            })
+            .catch(/*...*/);
+            </code></pre>
+          </p>
+
+        </div>
+        <div class="modalcontainer-footer">
+          <h3><a href="https://github.com/ATempestini" target="_blank" rel="noopener noreferrer"><img src="assets/github.png"
+                width='60px' height='55px'></a></a></h3>
+        </div>
+      </div>
+    </div>
+    <!-- The Modal -->
+    <div id="myModal35" class="modalcontainer">
+
+      <!-- Modal content -->
+      <div class="modalcontainer-content">
+        <div class="modalcontainer-header">
+          <span class="close3">&times;</span>
+          <h2>NODE</h2>
+        </div>
+        <div class="modalcontainer-body">
+          <p>
+            <strong>Usage:</strong><br>
+            Data Manipulation <br>API<br>Code Snippet<br>
+          </p>
+          <p>
+            <pre style="background-color: white;"><code class="language-js">
+            const emiCl = require('./roee');
+            const tikee = new emiCl((emiff) => {
+            let tickcnt=0;
+            setInterval(() => {
+            emiff('ticker',tickcnt++)
+            }, 1200);
+            }
+            );
+            module.exports = tikee;
+            </code></pre>
+          </p>
+
+        </div>
+        <div class="modalcontainer-footer">
+          <h3><a href="https://github.com/ATempestini" target="_blank" rel="noopener noreferrer"><img src="assets/github.png"
+                width='60px' height='55px'></a></a></h3>
+        </div>
+      </div>
+    </div>
+
+    <h1 style="color:#e6f1ff">Development</h1>
+    <p style="text-align:center; color:#8892b0">This is the coding section.<br>It lists all
+      languages I use or have exposure to.<br>Hover on the icon to show its tooltip.<br>Click on the icon to know the language usage</p>
+
+    <br><br><br><br><br><br>
+    <!-- THE CUBE -->
+    <div class="w3-padding-64 w3-content w3-center">
+      <div class="cubecontainer">
+        <!-- <h2>Horizontal</h2> -->
+        <div class="carousel">
+          <div class="item a">
+            <div class="codetooltip">
+              <input type="image" class="codeicon" src="assets/HTML5.png" alt="HTML5" position="align-center" width="48"
+                height="48" id="codeicon1">
+              <span class="codetooltiptext">HTML5</span>
+            </div>
+            <div class="codetooltip">
+              <input type="image" class="codeicon" src="assets/css3.png" alt="css3" position="align-center" width="48"
+                height="48" id="codeicon2">
+              <span class="codetooltiptext">css3</span>
+            </div>
+            <div class="codetooltip">
+              <input type="image" class="codeicon" src="assets/bootstrap.png" alt="bootstrap" position="align-center"
+                width="48" height="48" id="codeicon3">
+              <span class="codetooltiptext">bootstrap</span>
+            </div>
+          </div>
+          <div class="item b">
+            <div class="codetooltip">
+              <input type="image" class="codeicon" src="assets/xml-logo.png" alt="xml" position="align-center"
+                width="48" height="48" id="codeicon4">
+              <span class="codetooltiptext">xml</span>
+            </div>
+            <div class="codetooltip">
+              <input type="image" class="codeicon" src="assets/json-logo.png" alt="json" position="align-center"
+                width="48" height="48" id="codeicon5">
+              <span class="codetooltiptext">json</span>
+            </div>
+            <div class="codetooltip">
+              <input type="image" class="codeicon" src="assets/asp-logo.png" alt="asp" position="align-center"
+                width="48" height="48" id="codeicon6">
+              <span class="codetooltiptext">asp</span>
+            </div>
+          </div>
+          <div class="item c">
+            <div class="codetooltip">
+              <input type="image" class="codeicon" src="assets/javascript.png" alt="javascript" position="align-center"
+                width="48" height="48" id="codeicon7">
+              <span class="codetooltiptext">javascript</span>
+            </div>
+            <div class="codetooltip">
+              <input type="image" class="codeicon" src="assets/jquery.png" alt="jquery" position="align-center"
+                width="48" height="48" id="codeicon8">
+              <span class="codetooltiptext">jquery</span>
+            </div>
+          </div>
+          <div class="item d">
+            <div class="codetooltip">
+              <input type="image" class="codeicon" src="assets/python.png" alt="python" position="align-center"
+                width="48" height="48" id="codeicon9">
+              <span class="codetooltiptext">python</span>
+            </div>
+            <div class="codetooltip">
+              <input type="image" class="codeicon" src="assets/php.png" alt="php" position="align-center" width="48"
+                height="48" id="codeicon10">
+              <span class="codetooltiptext">php</span>
+            </div>
+            <div class="codetooltip">
+              <input type="image" class="codeicon" src="assets/ruby-on-rails.png" alt="ruby-on-rails"
+                position="align-center" width="48" height="48" id="codeicon11">
+              <span class="codetooltiptext">ruby-on-rails</span>
+            </div>
+          </div>
+          <div class="item e">
+            <div class="codetooltip">
+              <input type="image" class="codeicon" src="assets/java.png" alt="java" position="align-center" width="48"
+                height="48" id="codeicon12">
+              <span class="codetooltiptext">java</span>
+            </div>
+            <div class="codetooltip">
+              <input type="image" class="codeicon" src="assets/objective-c.png" alt="objective-c"
+                position="align-center" width="48" height="48" id="codeicon13">
+              <span class="codetooltiptext">objective-c</span>
+            </div>
+            <div class="codetooltip">
+              <input type="image" class="codeicon" src="assets/swift.png" alt="swift" position="align-center" width="48"
+                height="48" id="codeicon14">
+              <span class="codetooltiptext">swift</span>
+            </div>
+          </div>
+          <div class="item f">
+            <div class="codetooltip">
+              <input type="image" class="codeicon" src="assets/angularjs.png" alt="angular" position="align-center" width="48"
+                height="48" id="codeicon15">
+              <span class="codetooltiptext">angular</span>
+            </div>
+            <div class="codetooltip">
+              <input type="image" class="codeicon" src="assets/react.png" alt="react"
+                position="align-center" width="48" height="48" id="codeicon16">
+              <span class="codetooltiptext">react</span>
+            </div>
+            <div class="codetooltip">
+              <input type="image" class="codeicon" src="assets/node.png" alt="node" position="align-center" width="48"
+                height="48" id="codeicon17">
+              <span class="codetooltiptext">node</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <br><br><br><br><br><br> -->
+      <div class="next">Next</div>
+      <div class="prev">Prev</div>
+    </div>
+    <!-- End Portfolio grid -->
+   
+    <br><br><br><br><br><br><br><br>
+</div>
+<br>
+
+
+    <!-- Resume section with download button -->
+    <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="resume"><br>
+    <div id="techresume">
+      <h1 class="decorated"><span>Resume</span></h1>
+      <div class="vl1"></div>
+      <div class="profile">
+        <h3><img src="assets/resumeimg.png" alt="" width='250px' height='300px' id='sectionIcon'></h3>
+      </div>
+      <div class="finalSection">
+        <div class="section-text-block">
+          <h4 style="color:#64ffda">Resume</h4>
+          <p>Download my resume<br>for details on academic background<br> and work experience.<br>Access my GitHub repo at the bottom to see my work.<br>Click on the bottom right icon to get in touch.
+          </p>
+        </div>
+        <br>
+        <div class="vl1"></div>
+        <br>
+        <h1 style="color:#e6f1ff">Download</h1><br>
+        <a class="learn fa fa-download" alt="resume" style="color:#64ffda; padding: 20px;" href="assets/SE.pdf"
+          download="resume"></a>
+      </div>
+   
+    <div class="vl1"></div>
+    <br>
+    </div>
+   
+  </div>
+  <br>
+
+  <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge w3-center">
+    <a href="https://www.facebook.com/andrea.tempestini.5" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href="https://www.instagram.com/west_culture/" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <a href="https://stackoverflow.com/users/11525466/andrea-tempestini" target="_blank" rel="noopener noreferrer"><i class="fa fa-stack-overflow"></i></a>
+    <a href="https://www.pinterest.co.uk/tempestiniandre" target="_blank" rel="noopener noreferrer"><i class="fa fa-pinterest-p w3-hover-opacity"></i></a>
+    <a href="https://twitter.com/UNIATEM" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+    <a href="https://www.linkedin.com/in/andrea-tempestini-1b293342" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+    <br>
+    <a class="w3-medium w3-center" href="https://github.com/ATempestini" target="_blank" rel="noopener noreferrer"
+      class="w3-hover-text-green">Designed & Built by Andrea</a>
+    <!-- End footer -->
+  </footer>
+
+  <!-- END PAGE CONTENT -->
+  </div>
+
+  <!-- preloading logic  -->
+  <script>
+    var body = document.getElementsByTagName('body')[0];
+    var removeLoading = function () {
+      setTimeout(function () {
+        body.className = body.className.replace('loading', '');
+        document.body.style.backgroundImage = 'none';
+      }, 3000);
+    };
+    removeLoading();
+
+  </script>
+
+  <!-- logic for the 3d cube  -->
+  <script>
+    var carousel = $(".carousel"),
+      currdeg = 0;
+
+    $(".next").on("click", { d: "n" }, rotate);
+    $(".prev").on("click", { d: "p" }, rotate);
+
+    function rotate(e) {
+      if (e.data.d == "n") {
+        currdeg = currdeg - 60;
+      }
+      if (e.data.d == "p") {
+        currdeg = currdeg + 60;
+      }
+      carousel.css({
+        "-webkit-transform": "rotateY(" + currdeg + "deg)",
+        "-moz-transform": "rotateY(" + currdeg + "deg)",
+        "-o-transform": "rotateY(" + currdeg + "deg)",
+        "transform": "rotateY(" + currdeg + "deg)"
+      });
+    }
+
+  </script>
+
+  <!-- Logic to expand profile button    -->
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function () {
+        this.classList.toggle("activeprofile");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight) {
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      });
+    }
+  </script>
+
+  <!-- Logic to expand profile image -->
+  <script>
+    function myFunction(imgs) {
+      var expandImg = document.getElementById("expandedImg");
+      var imgText = document.getElementById("imgtext");
+      expandImg.src = imgs.src;
+      imgText.innerHTML = imgs.alt;
+      expandImg.parentElement.style.display = "block";
+    }
+  </script>
+
+  <!-- logic for the piechart -->
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('#piechart').piechart({
+        data: [
+          integration = [
+            { cat: 'Client Management', val: 9, label: "Pre-Sales" },
+            { cat: 'Client Management', val: 9, label: "Post-Sales" },
+            { cat: 'Client Management', val: 7, label: "Project Management" },
+            { cat: 'Client Management', val: 9, label: "Monitoring" },
+            { cat: 'Client Management', val: 8, label: "System Integration" },
+            { cat: 'Client Management', val: 7, label: "Planning" }
+          ],
+
+          network = [
+            { cat: 'Networking', val: 4, label: "IaaS" },
+            { cat: 'Networking', val: 8, label: "Paas" },
+            { cat: 'Networking', val: 9, label: "Saas" }
+          ],
+
+          web = [
+            { cat: 'Web Competence', val: 9, label: "Front-End" },
+            { cat: 'Web Competence', val: 7, label: "Back-End" },
+            { cat: 'Web Competence', val: 7, label: "Networking" },
+            { cat: 'Web Competence', val: 8, label: "Advertising" },
+            { cat: 'Web Competence', val: 9, label: "Cloud-Computing" },
+            { cat: 'Web Competence', val: 6, label: "Cyber Security" }
+          ],
+
+          system = [
+            { cat: 'Systems', val: 9, label: "MacOS" },
+            { cat: 'Systems', val: 8, label: "Windows" },
+            { cat: 'Systems', val: 8, label: "Linux" },
+            { cat: 'Systems', val: 6, label: "iOS" },
+            { cat: 'Systems', val: 6, label: "Android" }
+          ]
+        ]
+      });
+    });
+  </script>
+  <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+  <script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+  <script src="https://cdn.amcharts.com/lib/4/plugins/sunburst.js"></script>
+  <script src="https://cdn.amcharts.com/lib/4/themes/dataviz.js"></script>
+  <script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+  <script type="text/javascript">
+    am4core.ready(function () {
+
+      // Themes begin
+      am4core.useTheme(am4themes_dataviz);
+      am4core.useTheme(am4themes_animated);
+      // Themes end
+
+      // create chart
+      var chart = am4core.create("chartdiv", am4plugins_sunburst.Sunburst);
+      chart.padding(0, 0, 0, 0);
+      chart.radius = am4core.percent(98);
+
+      // chart data
+      chart.data = [{
+        name: "Biomechanics",
+        children: [
+          { name: "Analysis", value: 100 },
+          { name: "Design", value: 60 },
+          { name: "Prototyping", value: 60 },
+          { name: "Diagnose", value: 60 },
+          { name: "Safety", value: 60 },
+          { name: "Efficiency", value: 80 }
+        ]
+      },
+      {
+        name: "Science",
+        children: [
+          { name: "Biotechnology", value: 135 },
+          { name: "Medicine", value: 98 },
+          { name: "Research", value: 98 },
+          { name: "Genetics", value: 98 }
+        ]
+      },
+      {
+        name: "Development",
+        children: [
+          {
+            name: "Programming",
+            children: [
+              { name: "Front-End", value: 130 },
+              { name: "Back-End", value: 87 },
+              { name: "Application", value: 55 }
+            ]
+          },
+          {
+            name: "Networking",
+            children: [
+              { name: "Protocols", value: 130 },
+              { name: "Security", value: 87 },
+              { name: "Data", value: 55 }
+            ]
+          },
+          {
+            name: "Data Science", children: [
+              { name: "AI", value: 53 },
+              { name: "Machine Learning", value: 30 },
+              { name: "Deep Learning", value: 30 }
+            ]
+          },
+        ]
+      },
+      {
+        name: "Solutions",
+        children: [
+          { name: "Projects", value: 415 },
+          { name: "Pre-Sales", value: 148 },
+          { name: "Post-Sales", value: 89 },
+          { name: "UI Design", value: 89 },
+          { name: "Clients", value: 78 }
+        ]
+      },
+      {
+        name: "Management",
+        children: [
+          {
+            name: "Client Management",
+            children: [
+              { name: "Communication", value: 33 },
+              { name: "Strategies", value: 89 },
+              { name: "Leadership", value: 98 }
+            ]
+          },
+          {
+            name: "Product Management",
+            children: [
+              { name: "Planning", value: 33 },
+              { name: "Execution", value: 40 },
+              { name: "Monitoring", value: 98 }
+            ]
+          }
+        ]
+      }];
+
+      chart.colors.step = 2;
+      chart.fontSize = 11;
+      chart.innerRadius = am4core.percent(20);
+
+      // define data fields
+      chart.dataFields.value = "value";
+      chart.dataFields.name = "name";
+      chart.dataFields.children = "children";
+      chart.logo.disabled = true;
+
+      var level0SeriesTemplate = new am4plugins_sunburst.SunburstSeries();
+      chart.seriesTemplates.setKey("0", level0SeriesTemplate)
+
+      // this makes labels to be hidden if they don't fit
+      level0SeriesTemplate.labels.template.truncate = true;
+      level0SeriesTemplate.labels.template.hideOversized = true;
+      level0SeriesTemplate.showOnInit = false;
+      level0SeriesTemplate.usePercentHack = false;
+
+      level0SeriesTemplate.radius = am4core.percent(100);
+      level0SeriesTemplate.innerRadius = am4core.percent(0);
+
+      let selectedState = level0SeriesTemplate.states.create("selected");
+      selectedState.properties.opacity = 0.7;
+      level0SeriesTemplate.defaultState.properties.radius = am4core.percent(100);
+
+      var currentlySelected;
+
+      level0SeriesTemplate.slices.template.events.on("over", function (event) {
+        if (event.target.dataItem.sunburstDataItem.children) {
+          event.target.cursorOverStyle = am4core.MouseCursorStyle.pointer;
+        }
+      })
+
+      level0SeriesTemplate.slices.template.events.on("hit", function (event) {
+        zoomOutButton.show();
+        var hitSlice = event.target;
+
+        if (hitSlice.dataItem.sunburstDataItem.children) {
+
+          var series = event.target.dataItem.component;
+
+          if (!series.dummyData) {
+            series.tooltip.disabled = true;
+            hitSlice.dataItem.label.radius = (hitSlice.radius - hitSlice.pixelInnerRadius) - 7;
+            hitSlice.dataItem.label.bent = true;
+            hitSlice.dataItem.label.rotation = -180;
+
+            currentlySelected = hitSlice;
+            series.dummyData = true;
+            series.setState("selected");
+            hitSlice.dataItem.sunburstDataItem.series.show();
+            series.slices.each(function (slice) {
+              if (slice != event.target) {
+                slice.dataItem.hide();
+              }
+            })
+          }
+          else {
+            drillUp(hitSlice);
+          }
+        }
+      })
+
+
+      level0SeriesTemplate.labels.template.adapter.add("rotation", function (rotation, target) {
+        target.maxWidth = target.dataItem.slice.radius - target.dataItem.slice.innerRadius - 10;
+        target.maxHeight = Math.abs(target.dataItem.slice.arc * (target.dataItem.slice.innerRadius + target.dataItem.slice.radius) / 2 * am4core.math.RADIANS);
+        return rotation;
+      })
+
+      var level1SeriesTemplate = level0SeriesTemplate.clone();
+      level1SeriesTemplate.hidden = true;
+      level1SeriesTemplate.innerRadius = am4core.percent(10);
+      chart.seriesTemplates.setKey("1", level1SeriesTemplate)
+      level1SeriesTemplate.fillOpacity = 0.75;
+
+      var level2SeriesTemplate = level0SeriesTemplate.clone();
+      level2SeriesTemplate.hidden = true;
+      level2SeriesTemplate.innerRadius = am4core.percent(20);
+      chart.seriesTemplates.setKey("2", level2SeriesTemplate)
+
+      var zoomOutButton = chart.seriesContainer.createChild(am4core.ZoomOutButton);
+      zoomOutButton.visible = false;
+      zoomOutButton.horizontalCenter = "middle";
+      zoomOutButton.verticalCenter = "middle";
+      zoomOutButton.events.on("hit", function () {
+        drillUp(currentlySelected)
+      })
+
+
+      function drillUp(slice) {
+        collapse(slice);
+        var series = slice.dataItem.component;
+        series.tooltip.disabled = false;
+        series.dummyData = false;
+        series.setState("default");
+
+        series.slices.each(function (slice) {
+          if (slice != event.target) {
+            slice.dataItem.show();
+          }
+        })
+
+        if (series.parentDataItem.seriesDataItem) {
+          currentlySelected = series.parentDataItem.seriesDataItem.slice;
+        }
+        else {
+          zoomOutButton.hide();
+        }
+      }
+
+
+      function collapse(slice) {
+
+        slice.dataItem.label.bent = false;
+        slice.dataItem.label.radius = 10;
+
+
+        if (slice.dataItem.sunburstDataItem.children) {
+          slice.dataItem.sunburstDataItem.children.each(function (child) {
+            child.seriesDataItem.component.setState("hidden");
+            collapse(child.seriesDataItem.slice);
+          })
+        }
+      }
+
+    }); // end am4core.ready()
+  </script>
+
+
+  <!-- logic for the modals -->
+  <script>
+    // Get the modal
+    var modal1 = document.getElementById("myModal1");
+    var modal2 = document.getElementById("myModal2");
+    var modal3 = document.getElementById("myModal3");
+    var modal4 = document.getElementById("myModal4");
+    var modal5 = document.getElementById("myModal5");
+    var modal6 = document.getElementById("myModal6");
+    var modal7 = document.getElementById("myModal7");
+    var modal8 = document.getElementById("myModal8");
+    var modal9 = document.getElementById("myModal9");
+    var modal10 = document.getElementById("myModal10");
+    var modal11 = document.getElementById("myModal11");
+    var modal12 = document.getElementById("myModal12");
+    var modal13 = document.getElementById("myModal13");
+    var modal14 = document.getElementById("myModal14");
+    var modal15 = document.getElementById('myModal15');
+    var modal16 = document.getElementById('myModal16');
+    var modal17 = document.getElementById('myModal17');
+    var modal18 = document.getElementById('myModal18');
+    var modal19 = document.getElementById('myModal19');
+    var modal20 = document.getElementById('myModal20');
+    var modal21 = document.getElementById('myModal21');
+    var modal22 = document.getElementById('myModal22');
+    var modal23 = document.getElementById('myModal23');
+    var modal24 = document.getElementById('myModal24');
+    var modal25 = document.getElementById('myModal25');
+    var modal26 = document.getElementById('myModal26');
+    var modal27 = document.getElementById('myModal27');
+    var modal28 = document.getElementById('myModal28');
+    var modal29 = document.getElementById('myModal29');
+    var modal30 = document.getElementById('myModal30');
+    var modal31 = document.getElementById('myModal31');
+    var modal32 = document.getElementById('myModal32');
+    var modal33 = document.getElementById('myModal33');
+    var modal34 = document.getElementById('myModal34');
+    var modal35 = document.getElementById('myModal35');
+
+
+    // Get the buttons that open the modal
+    var btn1 = document.getElementById("myBtn_1");
+    var btn2 = document.getElementById("myBtn_2");
+    var btn3 = document.getElementById("myBtn_3");
+    var btn4 = document.getElementById("myBtn_4");
+    var btn5 = document.getElementById("myBtn_5");
+    var btn6 = document.getElementById("myBtn_6");
+    var btn7 = document.getElementById("myBtn_7");
+    var btn8 = document.getElementById("myBtn_8");
+    var btn9 = document.getElementById("button fit1");
+    var btn10 = document.getElementById("button fit2");
+    var btn11 = document.getElementById("button fit3");
+    var btn12 = document.getElementById("button fit4");
+    var btn13 = document.getElementById("button fit5");
+    var btn14 = document.getElementById("button fit6");
+    var btn15 = document.getElementById("btn-group1");
+    var btn16 = document.getElementById("btn-group2");
+    var btn17 = document.getElementById("btn-group3");
+    var btn18 = document.getElementById("btn-group4");
+    var btn19 = document.getElementById("codeicon1");
+    var btn20 = document.getElementById("codeicon2");
+    var btn21 = document.getElementById("codeicon3");
+    var btn22 = document.getElementById("codeicon4");
+    var btn23 = document.getElementById("codeicon5");
+    var btn24 = document.getElementById("codeicon6");
+    var btn25 = document.getElementById("codeicon7");
+    var btn26 = document.getElementById("codeicon8");
+    var btn27 = document.getElementById("codeicon9");
+    var btn28 = document.getElementById("codeicon10");
+    var btn29 = document.getElementById("codeicon11");
+    var btn30 = document.getElementById("codeicon12");
+    var btn31 = document.getElementById("codeicon13");
+    var btn32 = document.getElementById("codeicon14");
+    var btn33 = document.getElementById("codeicon15");
+    var btn34 = document.getElementById("codeicon16");
+    var btn35 = document.getElementById("codeicon17");
+
+    // Get the <span> element that closes the modal
+    var span1 = document.getElementsByClassName("close2")[0];
+    var span2 = document.getElementsByClassName("close2")[1];
+    var span3 = document.getElementsByClassName("close2")[2];
+    var span4 = document.getElementsByClassName("close2")[3];
+    var span5 = document.getElementsByClassName("close2")[4];
+    var span6 = document.getElementsByClassName("close2")[5];
+    var span7 = document.getElementsByClassName("close2")[6];
+    var span8 = document.getElementsByClassName("close2")[7];
+    var span9 = document.getElementsByClassName("close")[0];
+    var span10 = document.getElementsByClassName("close")[1];
+    var span11 = document.getElementsByClassName("close")[2];
+    var span12 = document.getElementsByClassName("close")[3];
+    var span13 = document.getElementsByClassName("close")[4];
+    var span14 = document.getElementsByClassName("close")[5];
+    var span15 = document.getElementsByClassName("close1")[0];
+    var span16 = document.getElementsByClassName("close1")[1];
+    var span17 = document.getElementsByClassName("close1")[2];
+    var span18 = document.getElementsByClassName("close1")[3];
+    var span19 = document.getElementsByClassName("close3")[0];
+    var span20 = document.getElementsByClassName("close3")[1];
+    var span21 = document.getElementsByClassName("close3")[2];
+    var span22 = document.getElementsByClassName("close3")[3];
+    var span23 = document.getElementsByClassName("close3")[4];
+    var span24 = document.getElementsByClassName("close3")[5];
+    var span25 = document.getElementsByClassName("close3")[6];
+    var span26 = document.getElementsByClassName("close3")[7];
+    var span27 = document.getElementsByClassName("close3")[8];
+    var span28 = document.getElementsByClassName("close3")[9];
+    var span29 = document.getElementsByClassName("close3")[10];
+    var span30 = document.getElementsByClassName("close3")[11];
+    var span31 = document.getElementsByClassName("close3")[12];
+    var span32 = document.getElementsByClassName("close3")[13];
+    var span33 = document.getElementsByClassName("close3")[14];
+    var span34 = document.getElementsByClassName("close3")[15];
+    var span35 = document.getElementsByClassName("close3")[16];
+
+    // When the user clicks the button, open the modal 
+    btn1.onclick = function () {
+      modal1.style.display = "block";
+    }
+    btn2.onclick = function () {
+      modal2.style.display = "block";
+    }
+    btn3.onclick = function () {
+      modal3.style.display = "block";
+    }
+    btn4.onclick = function () {
+      modal4.style.display = "block";
+    }
+    btn5.onclick = function () {
+      modal5.style.display = "block";
+    }
+    btn6.onclick = function () {
+      modal6.style.display = "block";
+    }
+    btn7.onclick = function () {
+      modal7.style.display = "block";
+    }
+    btn8.onclick = function () {
+      modal8.style.display = "block";
+    }
+    btn9.onclick = function () {
+      modal9.style.display = "block";
+    }
+    btn10.onclick = function () {
+      modal10.style.display = "block";
+    }
+    btn11.onclick = function () {
+      modal11.style.display = "block";
+    }
+    btn12.onclick = function () {
+      modal12.style.display = "block";
+    }
+    btn13.onclick = function () {
+      modal13.style.display = "block";
+    }
+    btn14.onclick = function () {
+      modal14.style.display = "block";
+    }
+    btn15.onclick = function () {
+      modal15.style.display = "block";
+    }
+    btn16.onclick = function () {
+      modal16.style.display = "block";
+    }
+    btn17.onclick = function () {
+      modal17.style.display = "block";
+    }
+    btn18.onclick = function () {
+      modal18.style.display = "block";
+    }
+    btn19.onclick = function () {
+      modal19.style.display = "block";
+    }
+    btn20.onclick = function () {
+      modal20.style.display = "block";
+    }
+    btn21.onclick = function () {
+      modal21.style.display = "block";
+    }
+    btn22.onclick = function () {
+      modal22.style.display = "block";
+    }
+    btn23.onclick = function () {
+      modal23.style.display = "block";
+    }
+    btn24.onclick = function () {
+      modal24.style.display = "block";
+    }
+    btn25.onclick = function () {
+      modal25.style.display = "block";
+    }
+    btn26.onclick = function () {
+      modal26.style.display = "block";
+    }
+    btn27.onclick = function () {
+      modal27.style.display = "block";
+    }
+    btn28.onclick = function () {
+      modal28.style.display = "block";
+    }
+    btn29.onclick = function () {
+      modal29.style.display = "block";
+    }
+    btn30.onclick = function () {
+      modal30.style.display = "block";
+    }
+    btn31.onclick = function () {
+      modal31.style.display = "block";
+    }
+    btn32.onclick = function () {
+      modal32.style.display = "block";
+    }
+    btn33.onclick = function () {
+      modal33.style.display = "block";
+    }
+    btn34.onclick = function () {
+      modal34.style.display = "block";
+    }
+    btn35.onclick = function () {
+      modal35.style.display = "block";
+    }
+
+
+    // When the user clicks on <span> (x), close the modal
+    span1.onclick = function () {
+      modal1.style.display = "none";
+    }
+    span2.onclick = function () {
+      modal2.style.display = "none";
+    }
+    span3.onclick = function () {
+      modal3.style.display = "none";
+    }
+    span4.onclick = function () {
+      modal4.style.display = "none";
+    }
+    span5.onclick = function () {
+      modal5.style.display = "none";
+    }
+    span6.onclick = function () {
+      modal6.style.display = "none";
+    }
+    span7.onclick = function () {
+      modal7.style.display = "none";
+    }
+    span8.onclick = function () {
+      modal8.style.display = "none";
+    }
+    span9.onclick = function () {
+      modal9.style.display = "none";
+      document.getElementById('myVideo1').pause();
+    }
+    span10.onclick = function () {
+      modal10.style.display = "none";
+      document.getElementById('myVideo2').pause();
+    }
+    span11.onclick = function () {
+      modal11.style.display = "none";
+      document.getElementById('myVideo3').pause();
+    }
+    span12.onclick = function () {
+      modal12.style.display = "none";
+      document.getElementById('myVideo4').pause();
+    }
+    span13.onclick = function () {
+      modal13.style.display = "none";
+      document.getElementById('myVideo5').pause();
+    }
+    span14.onclick = function () {
+      modal14.style.display = "none";
+      document.getElementById('myVideo6').pause();
+    }
+    span15.onclick = function () {
+      modal15.style.display = "none";
+    }
+    span16.onclick = function () {
+      modal16.style.display = "none";
+    }
+    span17.onclick = function () {
+      modal17.style.display = "none";
+    }
+    span18.onclick = function () {
+      modal18.style.display = "none";
+    }
+    span19.onclick = function () {
+      modal19.style.display = "none";
+    }
+    span20.onclick = function () {
+      modal20.style.display = "none";
+    }
+    span21.onclick = function () {
+      modal21.style.display = "none";
+    }
+    span22.onclick = function () {
+      modal22.style.display = "none";
+    }
+    span23.onclick = function () {
+      modal23.style.display = "none";
+    }
+    span24.onclick = function () {
+      modal24.style.display = "none";
+    }
+    span25.onclick = function () {
+      modal25.style.display = "none";
+    }
+    span26.onclick = function () {
+      modal26.style.display = "none";
+    }
+    span27.onclick = function () {
+      modal27.style.display = "none";
+    }
+    span28.onclick = function () {
+      modal28.style.display = "none";
+    }
+    span29.onclick = function () {
+      modal29.style.display = "none";
+    }
+    span30.onclick = function () {
+      modal30.style.display = "none";
+    }
+    span31.onclick = function () {
+      modal31.style.display = "none";
+    }
+    span32.onclick = function () {
+      modal32.style.display = "none";
+    }
+    span33.onclick = function () {
+      modal33.style.display = "none";
+    }
+    span34.onclick = function () {
+      modal34.style.display = "none";
+    }
+    span35.onclick = function () {
+      modal35.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+      if (event.target == modal1) {
+        modal1.style.display = "none";
+      }
+      if (event.target == modal2) {
+        modal2.style.display = "none";
+      }
+      if (event.target == modal3) {
+        modal3.style.display = "none";
+      }
+      if (event.target == modal4) {
+        modal4.style.display = "none";
+      }
+      if (event.target == modal5) {
+        modal5.style.display = "none";
+      }
+      if (event.target == modal6) {
+        modal6.style.display = "none";
+      }
+      if (event.target == modal7) {
+        modal7.style.display = "none";
+      }
+      if (event.target == modal8) {
+        modal8.style.display = "none";
+      }
+      if (event.target == modal9) {
+        modal9.style.display = "none";
+        document.getElementById('myVideo1').pause();
+      }
+      if (event.target == modal10) {
+        modal10.style.display = "none";
+        document.getElementById('myVideo2').pause();
+      }
+      if (event.target == modal11) {
+        modal11.style.display = "none";
+        document.getElementById('myVideo3').pause();
+      }
+      if (event.target == modal12) {
+        modal12.style.display = "none";
+        document.getElementById('myVideo4').pause();
+      }
+      if (event.target == modal13) {
+        modal13.style.display = "none";
+        document.getElementById('myVideo5').pause();
+      }
+      if (event.target == modal14) {
+        modal14.style.display = "none";
+        document.getElementById('myVideo6').pause();
+      }
+      if (event.target == modal15) {
+        modal15.style.display = "none";
+      }
+      if (event.target == modal16) {
+        modal16.style.display = "none";
+      }
+      if (event.target == modal17) {
+        modal17.style.display = "none";
+      }
+      if (event.target == modal18) {
+        modal18.style.display = "none";
+      }
+      if (event.target == modal19) {
+        modal19.style.display = "none";
+      }
+      if (event.target == modal20) {
+        modal20.style.display = "none";
+      }
+      if (event.target == modal21) {
+        modal21.style.display = "none";
+      }
+      if (event.target == modal22) {
+        modal22.style.display = "none";
+      }
+      if (event.target == modal23) {
+        modal23.style.display = "none";
+      }
+      if (event.target == modal24) {
+        modal24.style.display = "none";
+      }
+      if (event.target == modal25) {
+        modal25.style.display = "none";
+      }
+      if (event.target == modal26) {
+        modal26.style.display = "none";
+      }
+      if (event.target == modal27) {
+        modal27.style.display = "none";
+      }
+      if (event.target == modal28) {
+        modal28.style.display = "none";
+      }
+      if (event.target == modal29) {
+        modal29.style.display = "none";
+      }
+      if (event.target == modal30) {
+        modal30.style.display = "none";
+      }
+      if (event.target == modal31) {
+        modal31.style.display = "none";
+      }
+      if (event.target == modal32) {
+        modal32.style.display = "none";
+      }
+      if (event.target == modal33) {
+        modal33.style.display = "none";
+      }
+      if (event.target == modal34) {
+        modal34.style.display = "none";
+      }
+      if (event.target == modal35) {
+        modal35.style.display = "none";
+      }
+    }
+
+  </script>
+
+
+
+  <script>
+    // jQuery logic to control the modal
+    // $.noConflict();
+
+    jQuery(document).ready(function ($) {
+
+      'use strict';
+
+      $(function () {
+
+        // Vars
+        var modBtn = $('#modBtn'),
+          modal = $('#modal'),
+          close = modal.find('.close-btn img'),
+          modContent = modal.find('.modal-content');
+
+        // open modal when click on open modal button 
+        modBtn.on('click', function () {
+          modal.css('display', 'block');
+          modContent.removeClass('modal-animated-out').addClass('modal-animated-in');
+        });
+
+        // close modal when click on close button or somewhere out the modal content 
+        $(document).on('click', function (e) {
+          var target = $(e.target);
+          if (target.is(modal) || target.is(close)) {
+            modContent.removeClass('modal-animated-in').addClass('modal-animated-out').delay(300).queue(function (next) {
+              modal.css('display', 'none');
+              next();
+            });
+          }
+        });
+
+      });
+
+      // jQuery logic to smooth effect on user scroll
+      // on click event on all anchors with a class of scrollTo
+      $('a.scrollTo').on('click', function () {
+
+        // data-scrollTo = section scrolling to name
+        var scrollTo = $(this).attr('data-scrollTo');
+
+
+        // toggle active class on and off
+        $("a.scrollTo").each(function () {
+          if (scrollTo == $(this).attr('data-scrollTo')) {
+            $(this).addClass('active');
+          } else {
+            $(this).removeClass('active');
+          }
+        });
+
+
+        // animate and scroll to the section 
+        $('body, html').animate({
+
+          // the magic - scroll to section
+          "scrollTop": $('#' + scrollTo).offset().top
+        }, 1000);
+        return false;
+
+      });
+
+      // open overlay menu when click on menu icon
+      $(".menu-icon").click(function () {
+        $(this).toggleClass("active");
+        $(".overlay-menu").toggleClass("open");
+      });
+
+      // close overlay menu and return to main content 
+      $(".overlay-menu").click(function () {
+        $(".overlay-menu").removeClass("open");
+      });
+
+      $(".overlay-menu").click(function () {
+        $(".menu-icon").removeClass("active");
+      });
+
+    });
+
+  </script>
+
+  <script src="js/plugins.js"></script>
+
+</body>
+
+</html>
